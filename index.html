@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="CRM Index" />
+<meta name="author" content="Maxim Sokhatsky" />
+<title>CARTULARY</title>
+    <link rel="stylesheet" href="https://n2o.dev/blank.css" />
+</head>
+<body>
+<nav>
+    <a href="https://erp.uno/ua">ERP</a>
+    <a href="#" style="background:#ededed;">CARTULARY</a>
+</nav>
+<header>
+    <a href="https://github.com/erpuno/crm">
+    <img src="img/logo.svg" /></a>
+    <h1>CARTULARY</h1>
+</header>
+<aside>
+    <article>
+         <section>
+              <h3>СИНОПСИС</h3>
+              <div>МІА:Реєстри (CARTULARY)
+МІА:Реєстри — універсальна платформа, продукт компанії ІНФОТЕХ, для створення та забезпечення функціонування інформаційних реєстрів, баз (банків) даних різних масштабів, від базових міжсистемних довідників та класифікаторів до високонавантажених корпоративних, місцевих та державних ресурсів.
+
+<figure><code>$ mix deps.get
+$ iex -S mix
+$ open http://localhost:50222/app/cartulary.htm</code></figure>
+            </section>
+            <section>
+            <h3>Компоненти</h3>
+            <div>
+<ul>
+</ul>
+            </div>
+            <br />
+            <div>ЖОВ 2020 © <a href="https://github.com/doxtop">Андрій Задорожній</a> ISC</div>
+            </section>
+    </article>
+</aside>
+<main>
+<article>
+  <section>
+    <h3>МІА:Реєстри</h3>
+
+    <p>Особливості системи МІА:Реєстри в тісній інтеграції з системою МІА:Документообіг,
+       яка містить нормативно-правові документи з електронними підписами та/або
+       печатками (КЕП, ДСТУ 4145), на основі яких здійснюється створення,
+       модифікація та видаленні реєстрових об'єктів. МІА:Реєстри підтримує
+       ретроспективний історичний пошук, інтеграцію з гео-інформаційними
+       системами (ГІС), та систему управління процесами BPMN, на основі
+       яких формалізується предметно-орієнтована аналітична модель.</p>
+
+     <h4>Види реєстрів</h4>
+
+    <ul><li>Реєстри орієнтовані на суб’єктів організаційних систем</li>
+        <li>Реєстри орієнтовані на облік матеріальних ресурсів</li>
+        <li>Реєстри орієнтовані на георафічні об’єкти</li>
+        <li>Реєстри орієнтовані на події (накази, укази, нормативно-правові акти)</li>
+        <li>Реєстри предметно-орієнтованих словників для функціональних підсистем</li></ul>
+
+     <h4>Функціональні можливості</h4>
+
+     <p>1. Створення, модифікація та видалення об’єктів реєстрації на основі юридичних документів з електронним підписом та електронною печаткою (КЕП)<br>
+2. Підтримка ретроспективного та історичного представлення транзакційних даних<br>
+3. Уніфіковане управління реєстрами<br>
+4. Підтримка життєвого циклу об’єктів реєстрації<br>
+5. Забезпечення колективної міжорганізаційної роботи з рєстрами<br>
+6. Забезпечення конфіденційності (GDPR)<br>
+7. Управління доступом на основі (ACL) та (RBAC) 8. Оркестрація формальних процесів, які формалізують роботу з реєстрами (BPMN)<br>
+9. Архівна справа 10. Робота з витягами<br>
+11. Інтеграція з зовнішніми системами (МІА:Документообіг, ESRI ArcGIS)<br>
+12. Повнокритерільний та повнотекстовий пошук<br>
+13. Зрозуміле та просте API
+</p>
+
+<h4>Підготовка</h4>
+
+<p>Підтримується розробка та впровадження на платформах Windows, Windows Subsystem for Linux, Linux та Mac.</p>
+
+<p><ul><li>Erlang 22.1</li>
+<li>Elixir 1.9</li>
+<li>CMake 3.15</li>
+<li>libcsv 3.0</li></ul></p>
+
+<h4>Пререквізити для Ubuntu 19.10</h4>
+
+<figure><code>$ sudo apt install erlang elixir build-essential libcsv3 libcsv-dev cmake
+</code></figure>
+
+<h4>Інші системи</h4>
+
+<p>На інших системах радимо використовувати
+<a href="https://www.erlang-solutions.com/resources/download.html">білди Erlang та Elixir від Erlang Solutions</a>.</p>
+
+<h4>Компіляція та запуск</h4>
+
+<figure><code>$ mix deps.get
+$ mix compile
+$ iex -S mix
+</code></figure>
+
+<h4>Публікація</h4>
+
+<figure><code>$ mix release
+$ _build/dev/rel/crm/bin/crm daemon
+</code></figure>
+
+<h4>Підключення до екземпляру</h4>
+
+<figure><code>$ _build/dev/rel/cart/bin/cart remote
+</code></figure>
+
+<p>Тоді відкрийте посилання <a href="http://localhost:50222/app/cartulary.htm">localhost:50222/app/cartulary.htm</a>.</p>
+
+<h4>Розробники системи</h4>
+
+<ul>
+<li>Андрій Задорожній</li>
+<li>Ігор Городецький</li>
+<li>Максим Сохацький</li>
+</ul>
+
+     <br/>
+     <br/>
+  </section>
+</article>
+</main><footer>
+    Зроблено з любов'ю <span class="heart">❤</span> до ERP.UNO
+</footer></body></html>
